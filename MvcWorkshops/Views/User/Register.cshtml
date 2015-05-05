@@ -1,12 +1,23 @@
-﻿@model MvcWorkshops.Models.User.UserRegisterViewModel
+﻿@using System.Runtime.InteropServices
+@model MvcWorkshops.Models.User.UserRegisterViewModel
 @{
     ViewBag.Title = "Register";
 }
 
-<h2>Register</h2>
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(m => m.Username)
-    @Html.TextBoxFor(m => m.Username)
-    @Html.TextBoxFor(m => m.Username)
+    <fieldset>
+        <legend>Register</legend>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username, new {@class = "form-control"})
+            @Html.ValidationMessageFor(m => m.Username)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary"/>
+    </fieldset>
 }

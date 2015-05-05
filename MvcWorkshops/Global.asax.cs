@@ -26,7 +26,7 @@ namespace MvcWorkshops
                 .WithParameter("connectionString", 
                     ConfigurationManager.ConnectionStrings["Db"].ConnectionString);
 
-            builder.RegisterType<NewsRepository>()
+            builder.RegisterType<UserRepository>()
                 .As<IRepository<User>>()
                 .WithParameter("connectionString", 
                     ConfigurationManager.ConnectionStrings["Db"].ConnectionString);

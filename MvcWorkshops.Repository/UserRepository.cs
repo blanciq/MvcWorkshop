@@ -18,7 +18,7 @@ namespace MvcWorkshops.Repository
             {
                 connection.Open();
                 var cmd = connection.CreateCommand();
-                cmd.CommandText = "Select * from dbo.News";
+                cmd.CommandText = "Select * from [User]";
 
                 var reader = cmd.ExecuteReader();
 
@@ -40,7 +40,7 @@ namespace MvcWorkshops.Repository
             {
                 connection.Open();
                 var cmd = connection.CreateCommand();
-                cmd.CommandText = "Insert into dbo.News values (@p1, @p2)";
+                cmd.CommandText = "Insert into [User] values (@p1, @p2)";
                 cmd.Parameters.AddWithValue("@p1", news.Username);
                 cmd.Parameters.AddWithValue("@p2", news.Password);
 
