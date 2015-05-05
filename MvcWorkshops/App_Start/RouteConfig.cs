@@ -18,6 +18,11 @@ namespace MvcWorkshops
                 "register",
                 new {controller = "User", action = "Register"});
 
+             routes.MapRoute(
+                "Login",
+                "login",
+                new {controller = "User", action = "Login"});
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

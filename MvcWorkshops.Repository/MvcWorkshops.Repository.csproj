@@ -45,6 +45,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,6 +58,8 @@
   <ItemGroup>
     <Compile Include="IRepository.cs" />
     <Compile Include="News.cs" />
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="NewsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

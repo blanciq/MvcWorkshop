@@ -25,6 +25,27 @@ namespace MvcWorkshops.Controllers
             return View(new UserLoginViewModel());
         }
 
+        [HttpPost]
+        public ActionResult Login(UserLoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var sha1 = SHA1.Create();
+            var passwordHash = GetHashString(sha1.ComputeHash(Encoding.UTF8.GetBytes(model.Password)));
+            if (_repository.GetAll().Any(x => x.Username.Equals(model.Username) && x.Password.Equals(passwordHash)))
+            {
+                FormsAuthentication.SetAuthCookie(model.Username, false);
+
+                return RedirectToAction("Index", "Home");    
+            }
+
+            ModelState.AddModelError("Password", "Username or password is invalid");
+
+            return View(model);
+        }
 
         // GET: User
         public ActionResult Register()
