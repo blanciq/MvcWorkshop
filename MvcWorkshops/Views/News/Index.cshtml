@@ -1,0 +1,15 @@
+﻿@model MvcWorkshops.Models.News.NewsIndexViewModel
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>Todays news</h2>
+<ul>
+    @foreach (var news in Model.News)
+    {
+        <li>@news</li>
+    }
+</ul>
+@Html.ActionLink("Add news", "Add", null, new { @class = "btn btn-primary"})
+
+

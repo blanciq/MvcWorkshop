@@ -1,0 +1,13 @@
+﻿@model MvcWorkshops.Models.Home.IndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Message:</h2>
+<ul>
+    @foreach (var message in @Model.Messages)
+    {
+        <li>@message</li>
+    }
+</ul>
+

@@ -1,0 +1,12 @@
+﻿@model MvcWorkshops.Models.User.UserRegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username)
+}

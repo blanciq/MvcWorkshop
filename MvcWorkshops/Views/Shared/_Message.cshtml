@@ -1,0 +1,10 @@
+﻿@if (TempData.ContainsKey("Message"))
+{
+    <script type="text/javascript">
+        noty({
+            text: "@TempData["Message"]",
+            type: "success",
+            timeout: 2000
+        });
+    </script>
+}

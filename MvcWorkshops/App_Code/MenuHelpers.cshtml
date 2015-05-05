@@ -1,0 +1,4 @@
+@helper SetActiveState(string currentPage, string menuItem)
+{ 
+    @(currentPage == menuItem ? "class=active" : string.Empty) 
+}

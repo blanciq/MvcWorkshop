@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[News]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Content] TEXT NOT NULL
+)

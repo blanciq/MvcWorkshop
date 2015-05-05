@@ -1,0 +1,19 @@
+﻿@model MvcWorkshops.Models.News.NewsAddViewModel
+@{
+    ViewBag.Title = "Add news";
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>New news</legend>
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            @Html.LabelFor(m => m.Message)
+            @Html.TextBoxFor(m => m.Message, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Message)
+        </div>
+        <input type="submit" value="Add news" class="btn btn-primary" />
+    </fieldset>
+}
+
