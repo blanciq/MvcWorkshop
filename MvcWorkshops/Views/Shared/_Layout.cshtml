@@ -7,7 +7,6 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
 </head>
 <body>
 @Html.Partial("_Message")
@@ -44,8 +43,12 @@
     </footer>
 </div>
 
-@Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/jqueryui")
+<script src="~/Scripts/app/ajax.js"></script>
+<script src="~/Scripts/app/dialog.js"></script>
+<script src="~/Scripts/app/myModule.js"></script>
 @RenderSection("scripts", required: false)
 </body>
 </html>

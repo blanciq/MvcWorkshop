@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 using Common.Logging;
 using log4net.Repository.Hierarchy;
 using MvcWorkshops.Extensions;
+using MvcWorkshops.Infrastructure;
 using MvcWorkshops.Infrastructure.ModelBinders;
 using MvcWorkshops.Models.News;
 using MvcWorkshops.Repository;
@@ -33,20 +34,29 @@ namespace MvcWorkshops.Controllers
             ViewBag.MenuItem = "News";
             var model = new NewsIndexViewModel
             {
-                News = _repository.GetAll().Select(x => x.Content).ToList()
+                News = _repository.GetAll().ToList()
             };
             return View(model);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var news = _repository.GetAll().FirstOrDefault(x => x.Id == id);
+            if (news == null)
+            {
+                throw new Exception("Cannot find news with id " + id);
+            }
+            return Json(new
+            {
+                Success = true,
+                PartialView = this.RenderPartialToString("_Details", news)
+            }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Add(string news)
         {
             ViewBag.MenuItem = "News";
             return View(new NewsAddViewModel());
-        }
-
-        public ActionResult Exception()
-        {
-            throw new WebException("Oooops!");
         }
 
         [HttpPost]
@@ -60,26 +70,6 @@ namespace MvcWorkshops.Controllers
             this.AddSuccessMessage();
 
             return RedirectToAction("Index");
-        }
-    }
-
-    public class LogActionsAttribute : FilterAttribute, IActionFilter
-    {
-        public void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            var logger = LogManager.GetLogger("LogActions");
-            logger.TraceFormat("Calling {0}.{1}", 
-                filterContext.RouteData.Values["controller"],
-                filterContext.RouteData.Values["action"]);
-        }
-
-        public void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-            if (filterContext.Exception != null)
-            {
-                var logger = LogManager.GetLogger("LogActions");
-                logger.Trace("Exception occured", filterContext.Exception);
-            }
         }
     }
 }

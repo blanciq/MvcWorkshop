@@ -1,0 +1,21 @@
+﻿@model MvcWorkshops.Controllers.PagingModel
+<nav>
+    <ul class="pagination">
+
+        <li @(Model.Curr == 1 ? "class=disabled" : string.Empty)>
+            <a href="?page=@(Model.Curr - 1)" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (var i = Math.Max(1, Model.Curr - 2); i <= Math.Min(Model.Max, Model.Curr + 1); i++)
+        {
+            <li @(Model.Curr == i ? "class=active" : string.Empty)><a href="?page=@i">@i</a></li>
+        }
+        <li @(Model.Curr == Model.Max ? "class=disabled" : string.Empty)>
+            <a href="?page=@(Model.Curr + 1)" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+
+    </ul>
+</nav>

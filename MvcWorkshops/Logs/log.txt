@@ -1,8 +1,67 @@
-TRACE 9 LogActions - Calling news.Add
-TRACE 8 LogActions - Calling news.exception
-TRACE 8 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
+TRACE 156 LogActions - Calling news.Index
+TRACE 158 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Add
+TRACE 160 LogActions - Calling news.Details
+TRACE 158 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Details
+TRACE 157 LogActions - Calling news.Index
+TRACE 153 LogActions - Calling news.Details
+TRACE 159 LogActions - Calling news.Add
+TRACE 156 LogActions - Calling news.Details
+TRACE 160 LogActions - Calling news.Index
+TRACE 159 LogActions - Calling news.Details
+TRACE 153 LogActions - Calling news.Index
+TRACE 150 LogActions - Calling news.Details
+TRACE 152 LogActions - Calling news.Details
+TRACE 160 LogActions - Calling news.Index
+TRACE 150 LogActions - Calling news.Index
+TRACE 153 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Details
+TRACE 160 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Index
+TRACE 151 LogActions - Calling news.Details
+TRACE 159 LogActions - Calling news.Index
+TRACE 152 LogActions - Calling news.Details
+TRACE 153 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Details
+TRACE 153 LogActions - Calling news.Index
+TRACE 160 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Index
+TRACE 151 LogActions - Calling news.Details
+TRACE 152 LogActions - Calling news.Index
+TRACE 152 LogActions - Calling news.Details
+TRACE 151 LogActions - Calling news.Index
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Index
+TRACE 151 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Index
+TRACE 150 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Index
+TRACE 150 LogActions - Calling news.Index
+TRACE 150 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Details
+TRACE 150 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Index
+TRACE 146 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Index
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Index
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Calling news.Details
+TRACE 147 LogActions - Exception occured
+System.Exception: Cannot find news with id 3
+   at MvcWorkshops.Controllers.NewsController.Details(Int32 id) in c:\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 47
    at lambda_method(Closure , ControllerBase , Object[] )
    at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
    at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
@@ -13,10 +72,12 @@ System.Net.WebException: Oooops!
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 8 LogActions - Calling news.exception
-TRACE 8 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
+TRACE 147 LogActions - Calling news.Index
+TRACE 147 LogActions - Calling news.Details
+TRACE 146 LogActions - Calling news.Details
+TRACE 146 LogActions - Exception occured
+System.Exception: Cannot find news with id 3
+   at MvcWorkshops.Controllers.NewsController.Details(Int32 id) in c:\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 47
    at lambda_method(Closure , ControllerBase , Object[] )
    at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
    at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
@@ -27,10 +88,14 @@ System.Net.WebException: Oooops!
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 8 LogActions - Calling news.exception
-TRACE 8 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
+TRACE 135 LogActions - Calling news.Index
+TRACE 135 LogActions - Calling news.Details
+TRACE 135 LogActions - Exception occured
+System.ArgumentNullException: Value cannot be null.
+Parameter name: view
+   at System.Web.Mvc.ViewContext..ctor(ControllerContext controllerContext, IView view, ViewDataDictionary viewData, TempDataDictionary tempData, TextWriter writer)
+   at MvcWorkshops.Extensions.ControllerExtensions.RenderPartialToString(Controller ctrl, String viewName, Object modelData) in c:\Projects\MvcWorkshops\MvcWorkshops\Extensions\ControllerExtensions.cs:line 33
+   at MvcWorkshops.Controllers.NewsController.Details(Int32 id) in c:\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 49
    at lambda_method(Closure , ControllerBase , Object[] )
    at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
    at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
@@ -41,10 +106,18 @@ System.Net.WebException: Oooops!
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 8 LogActions - Calling news.exception
-TRACE 8 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
+TRACE 130 LogActions - Calling news.Index
+TRACE 130 LogActions - Calling news.Details
+TRACE 14 LogActions - Calling news.Index
+TRACE 135 LogActions - Calling news.Index
+TRACE 130 LogActions - Calling news.Details
+TRACE 128 LogActions - Calling news.Index
+TRACE 130 LogActions - Calling news.Index
+TRACE 129 LogActions - Calling news.Details
+TRACE 129 LogActions - Calling news.Details
+TRACE 129 LogActions - Exception occured
+System.Exception: Cannot find news with id 3
+   at MvcWorkshops.Controllers.NewsController.Details(Int32 id) in c:\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 47
    at lambda_method(Closure , ControllerBase , Object[] )
    at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
    at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
@@ -55,52 +128,5 @@ System.Net.WebException: Oooops!
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 10 LogActions - Calling news.exception
-TRACE 10 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
-   at lambda_method(Closure , ControllerBase , Object[] )
-   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
-   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 12 LogActions - Calling news.exception
-TRACE 12 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
-   at lambda_method(Closure , ControllerBase , Object[] )
-   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
-   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 12 LogActions - Calling news.Index
-TRACE 12 LogActions - Calling news.Index
-TRACE 12 LogActions - Calling news.Add
-TRACE 12 LogActions - Calling news.exception
-TRACE 12 LogActions - Exception occured
-System.Net.WebException: Oooops!
-   at MvcWorkshops.Controllers.NewsController.Exception() in c:\Users\polesiejuk\Documents\Visual Studio 2013\Projects\MvcWorkshops\MvcWorkshops\Controllers\NewsController.cs:line 48
-   at lambda_method(Closure , ControllerBase , Object[] )
-   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
-   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
-TRACE 12 LogActions - Calling news.add
-TRACE 8 LogActions - Calling news.add
-DEBUG 8 MvcWorkshops.Controllers.NewsController - Ip is: ::1
-TRACE 8 LogActions - Calling news.Index
+TRACE 151 LogActions - Calling news.Index
+TRACE 151 LogActions - Calling news.Details

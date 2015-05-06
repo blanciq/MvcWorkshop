@@ -7,9 +7,8 @@
 <ul>
     @foreach (var news in Model.News)
     {
-        <li>@news</li>
+        <li class="dialog-link" data-href="@Url.Action("Details", new { id = news.Id })">@news.Content</li>
     }
 </ul>
 @Html.ActionLink("Add news", "Add", null, new { @class = "btn btn-primary"})
-
 
