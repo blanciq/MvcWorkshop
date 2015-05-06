@@ -1,0 +1,16 @@
+﻿@using System.Web.UI.WebControls
+@model MvcWorkshops.Controllers.ProductIndexViewModel
+<h1>All products</h1>
+<ul class="list-inline">
+    @foreach (var product in Model.Products)
+    {
+        <li>
+            <div class="product thumbnail">
+                <h4>@product.Name</h4>
+                <img src="@Url.Content("/Content/images/product.jpg")" alt="@product.ImageUrl">
+            </div>
+        </li>
+    }
+</ul>
+@Html.Partial("_Pagination", Model.Paging)
+@Html.Action("ActionMethod")
