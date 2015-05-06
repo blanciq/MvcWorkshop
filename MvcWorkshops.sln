@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWorkshops", "MvcWorkshop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWorkshops.Repository", "MvcWorkshops.Repository\MvcWorkshops.Repository.csproj", "{55BB22D4-54D6-4E35-92B8-554F534B47EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWorkshops.Stubs", "MvcWorkshops.Stubs\MvcWorkshops.Stubs.csproj", "{6ABE0D48-9D4A-4EF2-A226-1D6161565BD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{55BB22D4-54D6-4E35-92B8-554F534B47EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55BB22D4-54D6-4E35-92B8-554F534B47EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55BB22D4-54D6-4E35-92B8-554F534B47EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABE0D48-9D4A-4EF2-A226-1D6161565BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABE0D48-9D4A-4EF2-A226-1D6161565BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABE0D48-9D4A-4EF2-A226-1D6161565BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABE0D48-9D4A-4EF2-A226-1D6161565BD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

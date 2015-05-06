@@ -6,6 +6,7 @@ using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
 using MvcWorkshops.Repository;
+using MvcWorkshops.Stubs;
 
 namespace MvcWorkshops
 {
@@ -28,8 +29,11 @@ namespace MvcWorkshops
 
             builder.RegisterType<UserRepository>()
                 .As<IRepository<User>>()
-                .WithParameter("connectionString", 
+                .WithParameter("connectionString",
                     ConfigurationManager.ConnectionStrings["Db"].ConnectionString);
+
+            builder.RegisterType<StubProductsRepository>()
+                            .As<IRepository<Product>>();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

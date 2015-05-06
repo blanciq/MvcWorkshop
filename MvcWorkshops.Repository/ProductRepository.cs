@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace MvcWorkshops.Repository
@@ -28,7 +29,7 @@ namespace MvcWorkshops.Repository
                     {
                         Id = (int)reader["id"],
                         Name = (string)reader["name"],
-                        Description = (string)reader["description"],
+                        Description = reader["description"] is DBNull ? string.Empty : (string)reader["description"],
                         ImageUrl = (string)reader["imageurl"],
                         Price = (decimal)reader["price"],
                     };
