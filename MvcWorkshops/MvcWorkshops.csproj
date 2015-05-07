@@ -167,6 +167,7 @@
     <Content Include="Scripts\app\ajax.js" />
     <Content Include="Scripts\app\dialog.js" />
     <Content Include="Scripts\app\myModule.js" />
+    <Content Include="Scripts\app\shoppingCart.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
@@ -202,6 +203,8 @@
     <Content Include="Views\Product\Index.cshtml" />
     <None Include="Views\News\_Details.cshtml" />
     <Content Include="Views\Shared\_Pagination.cshtml" />
+    <Content Include="Views\ShoppingCart\_Header.cshtml" />
+    <None Include="Views\ShoppingCart\Index.cshtml" />
     <None Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -237,6 +240,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -247,6 +251,9 @@
     <Compile Include="Models\Home\IndexViewModel.cs" />
     <Compile Include="Models\News\NewsAddViewModel.cs" />
     <Compile Include="Models\News\NewsIndexViewModel.cs" />
+    <Compile Include="Models\ShoppingCartIndexViewMode.cs" />
+    <Compile Include="Models\ShoppingCartModel.cs" />
+    <Compile Include="Models\ShoppingCart\ShoppingCartHeaderViewModel.cs" />
     <Compile Include="Models\User\UserLoginViewModel.cs" />
     <Compile Include="Models\User\UserRegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

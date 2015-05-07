@@ -13,12 +13,13 @@ namespace MvcWorkshops.Controllers
         public ActionResult Index()
         {
             ViewBag.MenuItem = "Homepage";
+            Session["Number"] = Session["Number"] ?? Guid.NewGuid();
             var model = new IndexViewModel()
             {
                 Messages = new List<string>
                 {
                     "Hello world",
-                    "My first MVC app"
+                    Session["Number"].ToString()
                 }
             };
             return View(model);

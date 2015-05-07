@@ -18,7 +18,7 @@ namespace MvcWorkshops
                 "register",
                 new {controller = "User", action = "Register"});
 
-             routes.MapRoute(
+            routes.MapRoute(
                 "Login",
                 "login",
                 new {controller = "User", action = "Login"});

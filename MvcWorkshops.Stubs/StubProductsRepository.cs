@@ -14,6 +14,7 @@ namespace MvcWorkshops.Stubs
             {
                 _products.Add(new Product
                 {
+                    Id = x,
                     Name = "Product" + x,
                     ImageUrl = "Product.jpg",
                     Price = decimal.Multiply(5, 85*x)

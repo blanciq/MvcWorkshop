@@ -1,12 +1,11 @@
-﻿@using System.Web.UI.WebControls
-@model MvcWorkshops.Controllers.ProductIndexViewModel
+﻿@model MvcWorkshops.Controllers.ProductIndexViewModel
 <h1>All products</h1>
 <ul class="list-inline">
     @foreach (var product in Model.Products)
     {
         <li>
             <div class="product thumbnail">
-                <h4>@product.Name</h4>
+                <h4><a href="@Url.Action("AddToShoppingCart", "ShoppingCart", new { id = @product.Id })">@product.Name</a></h4>
                 <img src="@Url.Content("/Content/images/product.jpg")" alt="@product.ImageUrl">
             </div>
         </li>

@@ -22,6 +22,8 @@ namespace MvcWorkshops.Controllers
 
         public ActionResult Index(int page = 1, int pageSize = PAGE_SIZE)
         {
+            ViewBag.MenuItem = "Products";
+
             var allProds = _repository.GetAll().ToList();
             var max = (allProds.Count()/pageSize) + 1;
             
