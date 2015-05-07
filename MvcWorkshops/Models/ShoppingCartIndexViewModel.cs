@@ -3,7 +3,7 @@ using MvcWorkshops.Repository;
 
 namespace MvcWorkshops.Models
 {
-    public class ShoppingCartIndexViewMode
+    public class ShoppingCartIndexViewModel
     {
         public IList<Product> Products { get; set; }
     }

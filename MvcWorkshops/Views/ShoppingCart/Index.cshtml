@@ -1,7 +1,24 @@
-﻿@model dynamic
+﻿@model ShoppingCartIndexViewModel
 
 @{
     ViewBag.Title = "Shopping cart";
 }
 
 <h2>Shopping cart</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>nazwa</th>
+        <th>cena</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in Model.Products)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+        </tr>
+    }
+    </tbody>
+</table>

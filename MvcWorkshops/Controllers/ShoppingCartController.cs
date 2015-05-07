@@ -18,7 +18,12 @@ namespace MvcWorkshops.Controllers
 
         public ActionResult Index()
         {
-            var model = new ShoppingCartIndexViewMode();
+            var model = new ShoppingCartIndexViewModel();
+
+            var cart = Session["cart"] as ShoppingCartModel ?? new ShoppingCartModel();
+
+            model.Products = cart.Products;
+
             return View(model);
         }
 
