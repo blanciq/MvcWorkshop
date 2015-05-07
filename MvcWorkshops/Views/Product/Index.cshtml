@@ -13,3 +13,11 @@
 </ul>
 @Html.Partial("_Pagination", Model.Paging)
 @Html.Action("ActionMethod")
+@section scripts
+{
+    shoppingCart.init({
+    url : {
+        shoppingCart : "@Url"
+    }
+    })
+}

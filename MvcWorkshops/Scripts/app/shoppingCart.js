@@ -27,7 +27,7 @@
                 }, {
                     text: "Go to shopping cart",
                     click: function() {
-                        document.location.href = "/shoppingcart";
+                        document.location.href = consts.url.shoppingCart;
                     }
                 }
             ],
@@ -40,6 +40,7 @@
         $(".product a").click(function (event) {
             event.preventDefault();
             var url = $(this).attr("href");
+            var title = $(this).attr("data-title");
             Focus.Common.Ajax({
                 method: "POST",
                 url: url,

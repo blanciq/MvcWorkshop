@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
 using Common.Logging;
-using log4net.Repository.Hierarchy;
 using MvcWorkshops.Extensions;
 using MvcWorkshops.Infrastructure;
 using MvcWorkshops.Infrastructure.ModelBinders;
@@ -46,6 +39,7 @@ namespace MvcWorkshops.Controllers
             {
                 throw new Exception("Cannot find news with id " + id);
             }
+
             return Json(new
             {
                 Success = true,

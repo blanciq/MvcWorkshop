@@ -18,7 +18,6 @@ namespace MvcWorkshops.Tests
                 .ForMember(x => x.FirstName, opt => opt.MapFrom(x => x.Name))
                 .ForMember(x => x.FullName, opt => opt.MapFrom(x => string.Format("{0} {1}", x.Name, x.LastName)));
         }
-
         [Test]
         public void MappingUserTest()
         {
@@ -30,8 +29,8 @@ namespace MvcWorkshops.Tests
 
             var viewModel = Mapper.Map<UserViewModel>(model);
 
-            Assert.AreEqual(viewModel.FirstName, "Paweł");
             Assert.AreEqual(viewModel.LastName, "Olesiejuk");
+            Assert.AreEqual(viewModel.FirstName, "Paweł");
             Assert.AreEqual(viewModel.FullName, "Paweł Olesiejuk");
 
         }

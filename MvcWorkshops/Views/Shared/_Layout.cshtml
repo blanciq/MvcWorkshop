@@ -49,6 +49,15 @@
 @Scripts.Render("~/bundles/bootstrap")
 @Scripts.Render("~/bundles/jqueryval")
 @Scripts.Render("~/bundles/jqueryui")
+<script type="text/javascript">
+    var consts = (function() {
+        var self = {};
+        self.url = {};
+        self.url.shoppingCart = "@Url.Action("Index", "ShoppingCart")";
+        return self;
+    })();
+</script>
+<script src="~/DynScript/urls" type="text/javascript"></script>
 <script src="~/Scripts/app/ajax.js"></script>
 <script src="~/Scripts/app/dialog.js"></script>
 <script src="~/Scripts/app/myModule.js"></script>
